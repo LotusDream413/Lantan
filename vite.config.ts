@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Lantan/', // <-- 加上这一行，解决 GitHub Pages 路径白屏问题
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
